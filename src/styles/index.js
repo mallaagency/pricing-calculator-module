@@ -9,4 +9,10 @@ export const theme = {
       xl: "text-xl",
     },
   },
+  divider: {
+    small: "py-2",
+  },
+  list: {
+    container: "flex gap-2",
+  },
 };
