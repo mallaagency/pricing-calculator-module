@@ -23,8 +23,8 @@ function Sidebar({ data, deal, currency }) {
   }, [data]);
 
   return (
-    <aside>
-      <div className="bg-white px-12 pb-16 w-96 rounded border border-gray-100">
+    <aside className="w-full max-w-xs">
+      <div className="bg-white px-12 pb-16 w-full rounded border border-gray-100">
         <div className="pt-16 pb-8">
           <Title type="h3">Su orden</Title>
         </div>
