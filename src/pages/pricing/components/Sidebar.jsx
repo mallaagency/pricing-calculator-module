@@ -25,8 +25,8 @@ function Sidebar({ data, deal, currency }) {
   return (
     <aside className="w-full max-w-xs">
       <div className="bg-white px-12 pb-16 w-full rounded border border-gray-100">
-        <div className="pt-16 pb-8">
-          <Title type="h3">Su orden</Title>
+        <div className="pt-8 pb-8">
+          <Title type="h3">Resumen</Title>
         </div>
         <div className="flex gap-4 justify-between py-4 border-b border-gray-100">
           <Text>Usuarios</Text>
@@ -70,7 +70,7 @@ function Sidebar({ data, deal, currency }) {
 
         <div>
           <Button
-            name="Comprar ahora"
+            name="Solicitar ahora"
             type="primary"
             isFullWidth
             isDisable={data.length === 0}
