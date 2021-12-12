@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, List } from "../../components";
+import { Container, List, Title } from "../../components";
 import { formatPrice } from "../../utils/formatPrice";
 import PriceCard from "./components/PriceCard";
 import { PriceHeader } from "./components/PriceHeader";
@@ -134,12 +134,13 @@ function PricingPage() {
         <div className="flex justify-between gap-4 flex-col md:flex-row">
           <section className="w-full">
             <UserQty data={data.deal.user} subTitle={userQtySubTitle} />
+
+            <Title type="h3">Elige tus Aplicaciones</Title>
             <List
               data={data.modules}
               renderItem={renderItemComponent}
               showBottomDivider
-              listClasses="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
-            />
+              listClasses="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4" />
           </section>
           <Sidebar
             data={cartItems}
