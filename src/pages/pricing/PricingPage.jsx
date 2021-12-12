@@ -141,6 +141,21 @@ function PricingPage() {
               renderItem={renderItemComponent}
               showBottomDivider
               listClasses="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4" />
+              
+            <Title type="h3">Aplicaciones extra</Title>
+            <List
+              data={data.modules}
+              renderItem={renderItemComponent}
+              showBottomDivider
+              listClasses="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4" />
+              
+            <Title type="h3">Integraciones extra</Title>
+            <List
+              data={data.modules}
+              renderItem={renderItemComponent}
+              showBottomDivider
+              listClasses="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4" />
+              
           </section>
           <Sidebar
             data={cartItems}
